@@ -1,0 +1,77 @@
+/* Apply to the form container */
+.main {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    font-family: Arial, sans-serif;
+    overflow: auto;
+    margin-top: -2cap;
+  }
+  
+  /* Style labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Style input fields */
+  input[type="text"],
+  input[type="number"],
+  input[type="password"] {
+    width: 60%;
+    padding:8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 1px  1px 2px 2px #c6c5c5;
+  }
+  
+  /* Radio buttons styling */
+  input[type="radio"] {
+    margin-right: 8px;
+  }
+  
+  label[for="radio"] {
+    display: flex;
+  }
+  
+  /* Submit button styling */
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+   transform: scale();
+  }
+  
+
+  div[formGroupName="address"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px  #565454;
+    border-radius: 5px;
+    background-color: #a7fac6;
+    box-shadow: 3px  3px 2px 2px #575656;
+    width: 60%;
+  }
+
+  div * {
+    margin: 5px 0;
+    font-size: 12px;
+    
+  }

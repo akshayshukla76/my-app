@@ -1,0 +1,30 @@
+<label>Find:</label>
+<input type="text" [(ngModel)]="term" (keyup)="filter()">
+<button >CREATE</button>
+<div class ="main">
+    
+    <div *ngIf="students.length > 0" class="products-list"></div>
+    <div class="card" *ngFor="let student of students">
+    <div class="head">
+<img class="logo" src="{{student.school_logo}}">
+        <h3>{{student.school_name}}</h3><br>
+        <h6 id="a">{{student.school_city}}</h6>
+        <h6 id="b">{{student.school_pin}}</h6>
+    </div>
+
+    <div class="body">
+        <p>NAME: {{student.name}}</p><br>
+        <p>PHONE: {{student.phone}}</p><br>
+        <p>CITY: {{student.city}}</p><br>
+        <p>DOB: {{student.dob}}</p><br>
+        <p>EMAIL: {{student.email}}</p><br>
+        <div class="profile_picture">
+            <img class="img" src="{{student.profile_picture}}"> 
+
+            <button class="btn btn-warning" routerLink="/dashboard/students-details/{{student.id}}">View</button>
+            <button class="btn btn-danger" (click)="delete(student.id)" >Delete</button>
+        </div>
+    </div>
+   
+</div>
+</div>

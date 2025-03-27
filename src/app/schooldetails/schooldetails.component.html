@@ -1,0 +1,68 @@
+<h2>STUDENT FORM</h2><hr>
+
+<div class ="main">
+    <form [formGroup]="userForm">
+        <h4>PERSONAL DETAILS</h4>
+        <label>NAME</label>
+        <input type="text" formControlName="name"><br>
+        <label>CLASS</label>
+        <input type="number" formControlName="class"><br>
+        <label>FATHER NAME</label>
+        <input type="text" formControlName="fathername"><br>
+        <label>EMAIL</label>
+        <input type="text" formControlName="email"><br><hr>
+
+ <div formGroupName="address">
+        <H4>ADDRESS</H4><br>
+
+        <label>CITY</label>
+        <input type="text" formControlName="city"><br>
+        <label>STATE</label>
+        <input type="text" formControlName="state"><br>
+        <label>pincode</label>
+        <input type="number" formControlName="pincode"><br><hr>
+</div>
+       <H4>TYPE</H4><BR>
+       <label>DAY SCHOLAR</label>
+       <input type="radio" name="type" value="dayscholar" formControlName="type"><br>
+       <label>RESIDENTIAL</label>
+       <input type="radio" name="type" value="residential" formControlName="type"><br>
+
+       <div *ngIf ="userForm.get('type')?.value=='dayscholar'">
+          <label>BUS FEE</label>
+          <input type="text" formControlName="busfee">
+        </div>
+        
+
+        <div *ngIf ="userForm.get('type')?.value=='residential'">
+            <label>RESIDENTIAL</label>
+            <input type="text" formControlName="hostelfee">
+        </div>
+    <button (click)="submit()" class="btn btn-warning">SUBMIT </button><br><hr>
+
+
+       
+<h3>EDUCATIONAL DETAILS</h3><br>
+<button (click) ="addcard()" class="btn btn-danger"> ADD DETAILS</button>
+<div formArrayNAme="cards" >
+
+    <div class="edu" *ngFor=" let card of cardsFormArray.controls; let i =index ">
+
+        <div formGroupName="{{i}}">
+            
+            <h3>Card:{{i+1}}</h3>
+
+            <label>CLASS</label>
+            <input type="number" formControlName="class"><br>
+            <label>YEAR</label>
+            <input type="month" formControlName="year"><br>
+            <label>PERCENTAGE</label>
+            <input type="number" formControlName="percentage"><br>
+
+            <button (click)="deletecard(i)" class="btn btn-danger">Remove Card</button>
+        </div>
+    </div>
+   </div>
+    </form>
+</div>
+    

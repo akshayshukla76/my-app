@@ -1,0 +1,110 @@
+
+
+.products-list {
+    display: flex;
+    flex:wrap;
+    justify-content: center;
+ 
+}
+label{
+    color: #ddd;
+}
+
+.card {
+    width: 40%;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(250, 250, 250, 0.1);
+    transition: transform 0.3s ease;
+    height: 23cap;
+    margin: 16px; /* This adds spacing around the cards */
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+
+.head .logo {
+    width: 60px;
+    height: 60px;
+    
+    background-color: #a8a2a2;
+}
+
+.head h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: -5cap;
+  
+    
+}
+
+#a {
+   text-align: center;
+   line-height: 3cap;
+   margin-top: -2.8cap;
+   margin-right: 2cap;
+   opacity: 0.5;
+   
+   
+}
+#b {
+    text-align: center;
+    margin-left: 8cap;
+    margin-top: -2.8cap;
+    opacity: 0.5;
+    
+    
+ }
+
+.body {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1;
+    color: #444;
+}
+
+.body p {
+margin: 0.1px;
+
+}
+
+.profile_picture {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.profile_picture .img {
+    width: 20%;
+    height:20%;
+ margin-left: 35cap;
+ margin-top: -20cap;
+    border: 2px solid #ddd;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+   margin-left: 3cap;
+   margin-top: 5cap;
+   
+  }
+  .btn{
+    margin-top: -3cap;
+    margin-left: 3cap;
+    font-size: 12px;
+   
+  }
+  .head{
+    background-color: #fafafa;
+    height: 6cap;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(14, 14, 14, 0.1);
+    margin-bottom: 1cap;
+  }
+ 

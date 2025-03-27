@@ -1,0 +1,7 @@
+<p>parent works!</p>
+<app-child [a]="10"></app-child>
+<app-rating [rating]="2.1"></app-rating>
+<app-child [a]="10" (childEvent)="capture($event)"></app-child>
+
+<!-- <app-input-field (childEvent)="capture($event)"></app-input-field> -->
+<!-- <h6>{{textlength}}/50</h6> -->

@@ -1,0 +1,58 @@
+p{
+    color: aliceblue;
+}
+
+
+h2{
+    text-align: center;
+   margin-bottom: 2cap;
+   color: white;
+   margin-top: 2cap;
+}
+hr{
+    color: antiquewhite;
+}
+  
+label {
+    display: inline-block; 
+    width: 150px;          
+    margin-right: 10px;    
+    color: rgb(244, 244, 225);
+}
+
+input {
+    margin-bottom: 15px;   
+    padding: 5px;         
+    border-radius: 5px;    
+    box-sizing: border-box; 
+    background-color: rgb(232, 237, 211);
+}
+  
+H4{
+    color: rgb(255, 255, 146);
+}
+
+
+
+
+div[formGroupName="address"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 0.1cap     white;
+    border-radius: 0.3cap;
+    border-style: groove;
+    width: 60%;
+}       
+
+
+
+.edu {
+    background-color: rgb(46, 63, 69); 
+        padding-top: 5cap;         
+    border: 2px solid #4a4a4a;   
+    border-radius: 10px;         
+    width: 60%;                 
+  margin-top: 5cap; 
+  height: 40cap auto;    
+ 
+}

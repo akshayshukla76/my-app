@@ -1,0 +1,19 @@
+h1{
+    color: aliceblue;
+}
+p{
+    color: aliceblue;
+}
+h2{
+    color: aliceblue;
+}
+.main{
+    text-align: center;
+    margin-top: 5cap;
+    line-height: 5cap;
+    
+}
+button{
+    background-color:bisque;
+    font-size: 1.4cap;
+}

@@ -1,0 +1,80 @@
+<h1 id="vehhead"> Vehicles </h1>
+<div class ="funcs">
+<h4>Find</h4>
+<input type="text"[(ngModel)]="term" (keyup)="filter()" placeholder="enter details">
+<h4>Sort</h4>
+<div class="drops">
+    <select [(ngModel)]="column">
+    <option>Vehicle</option>
+    <option>Cost</option>
+    <option>Fuel</option>
+    <option>Colour</option>
+     </select>
+
+     <select [(ngModel)]="order">
+
+        <option >asc</option>
+        <option >desc</option>
+     </select>
+
+     <button (click)="sort()">Sort</button>
+</div>
+
+
+<div class="drops2">
+    <h4>Pagination</h4>
+    <select [(ngModel)]="limit">
+    <option>10</option>
+    <option>20</option>
+    <option>30</option>
+    
+     </select>
+
+     <select [(ngModel)]="page">
+
+        <option >1</option>
+        <option >2</option>
+     </select>
+
+     <button (click)="pagination()">pagination </button>
+
+</div>
+<button routerLink="/dashboard/create-vehicle">Create vehicle</button>
+</div>
+
+
+
+<table class ="table table-dark" >
+    <thead>
+        <tr>
+            <th>S no</th>
+            <th>Vehicle Name</th>
+            <th>Color</th>
+            <th>Cost</th>
+            <th>Fuel</th>
+            <th colspan="3">Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr *ngFor="let vehicle of vehicles; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{vehicle.Vehicle}}</td>
+            <td>{{vehicle.color}}</td>
+            <td>{{vehicle.cost}}</td>
+            <td>{{vehicle.fuel}}</td>
+
+            <td>
+                <button routerLink="/dashboard/edit-vehicle/{{vehicle.id}}"
+                class="btn btn-warning">Edit</button>
+            </td>
+             <td>
+            <button routerLink="/dashboard/vehicle-details/{{vehicle.id}}"
+            class="btn btn-primary">View</button></td>
+            <td>
+
+                <button (click)="delete(vehicle.id)" class="btn btn-danger">Delete</button></td>
+            
+    </tbody>
+</table>

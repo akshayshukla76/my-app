@@ -1,0 +1,18 @@
+<h1>PINTEREST</h1>
+            <div class="main">
+              <div *ngFor="let pinterest of products" class="product-card">
+                <div class="container">
+                  <img src={{pinterest.download_url}} class="product-image" />
+                  <div class="middle">
+                    <div class="text">
+                      <h5 class="product-author">{{ pinterest.author }}</h5>
+                      <a href={{pinterest.url}}>
+                        <button>download</button>
+                      </a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            

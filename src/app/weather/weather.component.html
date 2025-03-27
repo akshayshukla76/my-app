@@ -1,0 +1,15 @@
+<div class="main">
+    <h1>Weather Information</h1>
+    <button (click)="fetchWeather()">Fetch Weather</button>
+    <div *ngIf="products && products.current_weather">
+      <h2>Current Weather:</h2>
+      <img src="https://cdn-icons-png.flaticon.com/512/1779/1779940.png" height="100cap">
+      <p>Temperature: {{ products.current_weather.temperature }} °C</p>
+      <p>Wind Speed: {{ products.current_weather.windspeed }} km/h</p>
+      <p>Weather Code: {{ products.current_weather.weathercode }}</p>
+    </div>
+    <div *ngIf="!products || !products.current_weather">
+      <p>No weather data available. Please click the button to fetch the data.</p>
+    </div>
+  </div>
+  

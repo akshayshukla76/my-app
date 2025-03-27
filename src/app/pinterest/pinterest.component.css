@@ -1,0 +1,70 @@
+h5 {
+    color: antiquewhite;
+  }
+  
+  .product-image {
+    height: 200px; /* Adjust the height accordingly */
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    margin-top: 0%;
+    position: relative; /* Required for absolute positioning of .middle */
+  }
+  
+  .main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    
+  }
+  
+  h1 {
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 2.5rem; /* Adjusted */
+  }
+  
+  .text {
+    background-color: #04aa6d;
+    color: white;
+    font-size: 10px;
+    
+  }
+  
+  .container {
+    position: relative; /* Make this container the reference for absolute positioning */
+   
+  }
+  
+  .middle {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(112, 102, 102, 0.5); /* Dark background for better contrast */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .container:hover .middle {
+    opacity: 1; /* Make the text container visible on hover */
+  
+  }
+  
+  .container:hover .product-image {
+    opacity: 1; /* Dim the image on hover */
+  transform: scale3d(1.2, 1.2, 1.2)  ;
+   
+  }
+button{
+    background-color: rgb(8, 76, 53);
+    color: azure;
+    font-size: 2cap;
+    border: 0;
+}

@@ -1,0 +1,22 @@
+#vehhead{
+    text-align: center;
+    text-shadow: 1px 1px #abaaaa;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+}
+th{
+    color:rgb(255, 255, 255);
+    size: 3cap;
+    background-color: rgb(71, 71, 102);
+    height: 4.5cap;
+}
+td{
+    color: rgb(187, 187, 246);
+    size: 2cap;
+}
+table{
+    width: 100%;
+}
+h4{
+    color: aliceblue;
+}

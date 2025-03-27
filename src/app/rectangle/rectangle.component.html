@@ -1,0 +1,23 @@
+<div class='rectangle'>
+    <h3>Area of Rectangle</h3><hr>
+    <label>Length of the rectangle</label>
+    <input type='number' id='l'><br>
+  
+    <label>Breadth of the rectangle</label>
+    <input type='number' id='b'><br>
+    <button onclick='area()'>Calculate Area</button>
+    <h3 id='ar'>Area of rectangle is</h3>
+  
+    <script>
+      function area(){
+        var a = parseFloat(document.getElementById('l').value);
+        console.log(a);
+        var b = parseFloat(document.getElementById('b').value);
+        console.log(b);
+        var area = a * b;
+        console.log(area);
+        document.getElementById('ar').innerText = "Area of rectangle is " + area;
+      };
+    </script>
+  </div>
+  
